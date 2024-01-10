@@ -1,4 +1,27 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silence on lit</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!--
+    <h1 class="</*?php echo$color */?>">
+    </*?php
+        echo($displayedText)
+    */?>
+    
+
+    </h1>-->
+
+    <?php
+        require_once("../view/modules/header.php");
+        require_once("../view/modules/nav.php");
+    ?>
+
+    <main>
     <div class="accompagnement">
         <h1>
             Témoignages sur l’accompagnement de SOL!
@@ -189,4 +212,11 @@
         </div>
 
     </div>
-</main>
+    </main>
+    
+    <?php
+        require_once("../view/modules/footer.php");
+    ?>
+
+</body>
+</html>

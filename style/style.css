@@ -23,9 +23,9 @@ body{
 
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-image: url(../asset/livres.jpg);
     background-position: 20vh;
 
@@ -36,6 +36,7 @@ header{
     border-bottom: solid 2px #000000 ;
 }
 
+
 header>div>h1{
     font-size: 5vh;
     text-decoration: underline;
@@ -45,7 +46,15 @@ header>div>h3{
     font-size: 2vh;
 }
 
-header>div{
+header>#logo{
+    width: 16vw;
+    height: 16vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../asset/logo.png);
+}
+
+header>#headerTitle{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,6 +68,20 @@ header>div{
     height: 10vh;
     background-color: #808080;
     border-radius: 20vw;
+}
+
+header>#headerLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 20vw;
+    height: 10vh;
+    background-color: #808080;
+    border-radius: 5vw;
+
+    right: 0;
 }
 
 nav{
@@ -150,3 +173,24 @@ main{
     margin-bottom: 2vh;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    align-items: left;
+    bottom: 0;
+    left: 0;
+
+    position: fixed;
+    z-index: 10;
+
+
+}
+
+footer>a{
+    width: 5vw;
+    height: 5vh;
+    background-image: url(../asset/Arrowtop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

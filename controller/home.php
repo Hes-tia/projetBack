@@ -1,45 +1,31 @@
-    <?php
-        /*$prenom = "yanis";
-        $nom = "ben hatat";
-        $age = 21;
-        $displayedText="bonjour {$prenom} {$nom}!";
+<?php
+    /*$prenom = "yanis";
+    $nom = "ben hatat";
+    $age = 21;
+    $displayedText="bonjour {$prenom} {$nom}!";
 
-        $color;
+    $color;
 
-        if($age>30){
-            $color="blue";
-        } else {
-            $color="pink";
-        }
-        */
-    ?>
+    if($age>30){
+        $color="blue";
+    } else {
+        $color="pink";
+    }
+    */
+    session_start();
+
+    if(isset($_POST["nom"])){
+        $_SESSION["nom"]=$_POST["nom"];
+    }
+
+    $pageTitle="Silence on lit!";
+    $pageSubTitle="Un temps de lecture pour la culture!";
+
+    $buttonList=[
+        ["label" => "acceuil","url" => "../controller/home.php"], 
+        ["label" => "bibliothèque","url" => "../controller/books.php?"]
+    ];
+
+    require_once("../view/homeView.php")            
+?>
         
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>silence on lit</title>
-    <link rel="stylesheet" href="../style/style.css">
-</head>
-<body>
-    <!--
-    <h1 class="</*?php echo$color */?>">
-    </*?php
-        echo($displayedText)
-    */?>
-    
-
-    </h1>-->
-
-    <?php
-        require_once("../view/modules/header.php");
-        require_once("../view/modules/nav.php");
-        require_once("../view/modules/main.php");
-    ?>
-
-    <footer>
-
-    </footer>
-</body>
-</html>
