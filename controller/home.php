@@ -35,15 +35,8 @@
     <?php
         require_once("../view/modules/header.php");
         require_once("../view/modules/nav.php");
+        require_once("../view/modules/main.php");
     ?>
-
-
-
-
-
-    <main>
-
-    </main>
 
     <footer>
 
