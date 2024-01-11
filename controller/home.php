@@ -23,8 +23,12 @@
 
     $buttonList=[
         ["label" => "acceuil","url" => "../controller/home.php"], 
-        ["label" => "bibliothèque","url" => "../controller/books.php?"]
+        //["label" => "bibliothèque","url" => "../controller/books.php?"]
     ];
+
+    if(isset($_SESSION['nom'])){
+        $buttonList[]=["label" => "bibliothèque","url" => "../controller/books.php"];
+    }
 
     require_once("../view/homeView.php")            
 ?>

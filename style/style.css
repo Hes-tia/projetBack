@@ -194,3 +194,66 @@ footer>a{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/*tableau*/
+
+.bookContainer {
+    width: 80vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #a9a9a9;
+    height: 6vh;
+    font-size: 2vh;
+    width: 80vw;
+}
+
+#firstLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #808080;
+    height: 4vh;
+    font-size: 3vh;
+    width: 80vw;
+}
+
+.titre {
+    width: 30%;
+    border: #000000 solid 2px;
+    padding-left: 1vw;
+}
+
+.auteur {
+    width: 20%;
+    border: #000000 solid 2px;
+    padding-left: 1vw;
+}
+
+.Annee{
+    width: 15%;
+    border: #000000 solid 2px;
+    padding-left: 1vw;
+}
+
+.genre{
+    width: 15%;
+    border: #000000 solid 2px;
+    padding-left: 1vw;
+}
+
+.detail{
+    width: 20%;
+    border: #000000 solid 2px;
+    padding-left: 1vw;
+}

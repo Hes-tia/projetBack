@@ -17,12 +17,13 @@
                         if(isset($_SESSION["nom"])){?>
 
                         <h2>Bonjour <?php echo$_SESSION["nom"] ?></h2>
+                        <a class="" href="../controller/logout.php">Deconnexion</a>
 
 
                 <?php   }else{?>
                         <form method="post" action="../controller/home.php">
                                 <input name="nom" type="text">
-                                <input type="submit" value="votre nom">
+                                <input class="" type="submit" value="votre nom">
                         </form>
 
                 <?php   }?>
